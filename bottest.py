@@ -2,9 +2,7 @@ import os
 import random
 import discord
 from discord.ext import commands
-
-with open('token.txt' , 'r') as f:
-	TOKEN = f.read().strip()
+from config import TOKEN
 
 bot = commands.Bot(command_prefix='boo-')
 print("Bot connected...")
