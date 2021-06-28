@@ -2,14 +2,9 @@ import os
 import random
 import discord
 from discord.ext import commands
-'''from dotenv import load_dotenv
 
-load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
-'''
-with open("token.txt" , 'r') as f:
-	r = f.readlines()
-	TOKEN = r[0].strip()
+with open('token.txt' , 'r') as f:
+	TOKEN = f.read().strip()
 
 bot = commands.Bot(command_prefix='boo-')
 print("Bot connected...")
